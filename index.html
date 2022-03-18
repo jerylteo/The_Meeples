@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Meeples</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: { 
+                colors: {
+                    primary: '#FF555E',
+                    secondary: '#CBABFF',
+                    tertiary: '#858585',
+                    quarternary: '#83B2FF',
+                    quinary: '#FF8D56',
+                    text: '#2E2E2E',
+                    custom_green: '#21F521',
+                    custom_grey: '#D9D9D9'
+                },
+                spacing: {
+                    '18': '4.5rem'
+                },
+                fontSize: {
+                    // 'lg': '1.2rem',
+                    'xl': '1.4rem'
+                },
+                borderRadius: {
+                    'xl': '20px'
+                },
+            }
+          }
+        }
+      </script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700;800&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main id="app" class="relative top-0 left-0">
+        <app-init></app-init>
+        <router-view></router-view>
+    </main>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+<script src="https://unpkg.com/vue-router@3.5.1/dist/vue-router.js"></script>
+
+<script src="js/comps/mainComp.js"></script>
+<script src="js/comps/headerComp.js"></script>
+<script src="js/comps/navComp.js"></script>
+<script src="js/comps/initComp.js"></script>
+
+<script src="js/routes.js"></script>
+<script src="js/app.js"></script>
+
+</html>
