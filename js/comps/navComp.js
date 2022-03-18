@@ -13,61 +13,61 @@ Vue.component('app-nav', {
         </div>
         <div class="bg-custom_grey text-center p-2 flex items-center justify-center">
             <button class="flex items-center justify-center">    
-                <img class="inline mr-2" src="../Resources/icons/BWbook 1.png" alt="Book Icon">
+                <img class="inline mr-2" src="./Resources/icons/BWbook 1.png" alt="Book Icon">
                 <p class="font-extrabold text-lg text-text">lore and story</p>
             </button>
         </div>
         <div class="bg-white text-center p-2 flex items-center justify-center">
             <button class="flex items-center justify-center">    
-                <img class="inline mr-2" src="../Resources/icons/discord.png" alt="Discord Icon">
+                <img class="inline mr-2" src="./Resources/icons/discord.png" alt="Discord Icon">
                 <p class="font-extrabold text-lg text-text">discord</p>
             </button>
         </div>
         <div class="bg-white text-center p-2 flex items-center justify-center">
             <button class="flex items-center justify-center">     
-                <img class="inline mr-2" src="../Resources/icons/8map 1.png" alt="Map Icon">
+                <img class="inline mr-2" src="./Resources/icons/8map 1.png" alt="Map Icon">
                 <p class="font-extrabold text-lg text-text">roadmap</p>
             </button>
         </div>
         <div class="bg-custom_grey text-center p-2 flex items-center justify-center">
             <button class="flex items-center justify-center">    
-                <img class="inline mr-2" src="../Resources/icons/twitter.png" alt="Twitter Icon">
+                <img class="inline mr-2" src="./Resources/icons/twitter.png" alt="Twitter Icon">
                 <p class="font-extrabold text-lg text-text">twitter</p>
             </button>
         </div>
         <div class="bg-custom_grey text-center p-2 flex items-center justify-center">
             <button class="flex items-center justify-center">    
-                <img class="inline mr-2" src="../Resources/icons/3chest 1.png" alt="Chest Icon">
+                <img class="inline mr-2" src="./Resources/icons/3chest 1.png" alt="Chest Icon">
                 <p class="font-extrabold text-lg text-text">holder benefits</p>
             </button>
         </div>
         <div class="bg-white text-center p-2 flex items-center justify-center">
             <button class="flex items-center justify-center">    
-                <img class="inline mr-2" src="../Resources/icons/instagram.png" alt="Instagram Icon">
+                <img class="inline mr-2" src="./Resources/icons/instagram.png" alt="Instagram Icon">
                 <p class="font-extrabold text-lg text-text">instagram</p>
             </button>
         </div>
         <div class="bg-white text-center p-2 flex items-center justify-center">
             <button class="flex items-center justify-center">
-                <img class="inline mr-2" src="../Resources/icons/5piggybank 1.png" alt="Piggybank Icon">
+                <img class="inline mr-2" src="./Resources/icons/5piggybank 1.png" alt="Piggybank Icon">
                 <p class="font-extrabold text-lg text-text">fund allocation</p>
             </button>
         </div>
         <div class="bg-custom_grey text-center p-2 flex items-center justify-center">
             <button class="flex items-center justify-center">
-                <img class="inline mr-2" src="../Resources/icons/youtube.png" alt="Youtube Icon">
+                <img class="inline mr-2" src="./Resources/icons/youtube.png" alt="Youtube Icon">
                 <p class="font-extrabold text-lg text-text">youtube</p>
             </button>
         </div>
         <div class="bg-custom_grey text-center p-2 flex items-center justify-center">
             <button class="flex items-center justify-center">
-                <img class="inline mr-2" src="../Resources/icons/1faq 1.png" alt="FAQ Icon">
+                <img class="inline mr-2" src="./Resources/icons/1faq 1.png" alt="FAQ Icon">
                 <p class="font-extrabold text-lg text-text">FAQs</p>
             </button>
         </div>
         <div class="bg-white text-center p-2 flex items-center justify-center">
             <button class="flex items-center justify-center">
-                <img class="inline mr-2" src="../Resources/icons/whitepaper.png" alt="Whitepaper Icon">
+                <img class="inline mr-2" src="./Resources/icons/whitepaper.png" alt="Whitepaper Icon">
                 <p class="font-extrabold text-lg text-text">whitepaper</p>
             </button>  
         </div>
