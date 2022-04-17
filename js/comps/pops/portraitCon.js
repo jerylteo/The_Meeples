@@ -33,42 +33,42 @@ Vue.component('app-portraitCon', {
                 {
                     name: 'Jakub',
                     role: 'CEO',
-                    img: '../../../Resources/members/img.png'
+                    img: './Resources/members/img.png'
                 },
                 {
                     name: 'Jakub',
                     role: 'CEO',
-                    img: '../../../Resources/members/img.png'
+                    img: './Resources/members/img.png'
                 },
                 {
                     name: 'Jakub',
                     role: 'CEO',
-                    img: '../../../Resources/members/img.png'
+                    img: './Resources/members/img.png'
                 },
                 {
                     name: 'Jakub',
                     role: 'CEO',
-                    img: '../../../Resources/members/img.png'
+                    img: './Resources/members/img.png'
                 },
                 {
                     name: 'Jakub',
                     role: 'CEO',
-                    img: '../../../Resources/members/img.png'
+                    img: './Resources/members/img.png'
                 },
                 {
                     name: 'Jakub',
                     role: 'CEO',
-                    img: '../../../Resources/members/img.png'
+                    img: './Resources/members/img.png'
                 },
                 {
                     name: 'Jakub',
                     role: 'CEO',
-                    img: '../../../Resources/members/img.png'
+                    img: './Resources/members/img.png'
                 },
                 {
                     name: 'Jakub',
                     role: 'CEO',
-                    img: '../../../Resources/members/img.png'
+                    img: './Resources/members/img.png'
                 },
             ]
         }
