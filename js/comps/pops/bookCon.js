@@ -6,7 +6,7 @@ Vue.component('app-bookCon', {
             <div class="grid grid-cols-2 gap-20 w-full h-full">
                 <div class="flex flex-col justify-center text-center">
                     <div>
-                        <img src="Resources/The Meeples Coloured Logotype.png" alt="The Meeples">
+                        <img src="./Resources/The Meeples Coloured Logotype.png" alt="The Meeples">
                     </div>
                     <h3 class="text-4xl font-extrabold">Lore and Story</h3>
                 </div>
