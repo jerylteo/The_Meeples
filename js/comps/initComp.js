@@ -3,9 +3,9 @@ Vue.component('app-init', {
     `
     <section class="absolute top-0 right-0 w-screen h-screen bg-custom_grey z-50" ref="init" id="init">
         <article class="w-full h-full flex flex-col items-center justify-center">
-            <h1 class="text-8xl font-extrabold mb-6">
-                <span class="text-primary">Th</span><span class="text-secondary">e M</span><span class="text-tertiary">ee</span><span class="text-quarternary">pl</span><span class="text-quinary">es</span>
-            </h1>
+            <div class="mb-6 w-200">
+                <img class="object-fit" src="/Resources/The Meeples Coloured Logotype.png" alt="The Meeples">
+            </div>
             <p class="text-xl font-extrabold"><span class="text-primary">Immerse yourself</span> in this web application with a <span class="text-primary">1920x1080</span> resolution for the best experience</p>
             <div>
                 <svg role="status" class="mt-12 w-12 h-12 text-custom_grey animate-spin fill-blue-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">

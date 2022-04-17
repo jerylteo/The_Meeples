@@ -1,58 +1,70 @@
 Vue.component('app-main', {
     template:
     `
-    <section>
-        <app-header></app-header>
-        <main class="absolute top-0 left-0">
-            <button id="boardCon" class="absolute left-18 top-40">
-                <!-- <img src="/Resources/9board.png" alt="board"> -->
-                <div id="boardContent" class="p-16 pt-20">
-                    <p class="text-lg leading-6 font-extrabold"><span class="text-primary">Th</span><span class="text-secondary">e M</span><span class="text-tertiary">ee</span><span class="text-quarternary">pl</span><span class="text-quinary">es</span>                        is a GENESIS collection of 5,555 fully customizable NFTs that grants you exclusive access to Meeple’s Metro and much more!
+    <section class="h-full">
+        <app-header @showMenu="showMenu" @closeMenu="closeMenu" @openComp="openComp"></app-header>
+        <main class="absolute top-0 left-0 h-full z-10" id="main">
+            <div id="overlay" class="transition-opacity bg-black opacity-0 h-full w-full"></div>
+            <button @click="mouseClick" id="boardCon" class="absolute left-20 top-52">
+                <div id="boardContent" class="w-88 h-64 py-8 px-12">
+                    <p class="text-lg text-left leading-6 font-extrabold"><span class="text-primary">Th</span><span class="text-quarternary">e M</span><span class="text-secondary">ee</span><span class="text-tertiary">pl</span><span class="text-quinary">es</span> is a GENESIS collection of 5,555 fully customizable NFTs that grants you exclusive access to Meeple’s Metro and much more!
                         <br><br>psst, click on some of the items to learn more about the project!</p>
                 </div>
             </button>
-            <button @mouseclick="mouseClick" @mouseover="mouseOver" id="whitepaperCon" class="absolute top-48" style="left: 497px"></button>
-            <button @mouseclick="mouseClick" @mouseover="mouseOver" id="portraitCon" class="absolute" style="left: 509px; top: 660px"></button>
-            <div @mouseclick="mouseClick" @mouseover="mouseOver" id="computerCon" class="absolute" style="left: 833px; top: 524px">
-                <div class="relative">
-                    <div class="absolute w-64 flex flex-col items-center" style="left: 128px; top: 125px">
-                        <h2 class="text-custom_green text-2xl font-extrabold mb-2">.../5,555 minted</h2>
-                        <button class="bg-custom_green text-2xl font-extrabold text-black rounded-3xl w-full py-1">CONNECT</button>
-                    </div>
-                </div>
+            <button @click="mouseClick" id="whitepaperCon" class="absolute top-64 left-128 w-64 h-88"></button>
+            <button @click="mouseClick" id="portraitCon" class="absolute top-168 left-128 w-64 h-48"></button>
+            <app-portraitCon v-if="component == 'portraitCon'" @closeComp="closeComp"></app-portraitCon>
+
+            <div @click="mouseClick" id="computerCon" class="absolute top-152 left-240 w-72 h-40 flex flex-col items-center justify-center">
+                <h2 class="text-custom_green text-2xl font-extrabold mb-2">.../5,555 minted</h2>
+                <button class="bg-custom_green text-2xl font-extrabold text-black rounded-3xl w-3/4 py-1 drop-shadow">CONNECT</button>
             </div>
-            <button @mouseclick="mouseClick" @mouseover="mouseOver" id="bookCon" class="absolute" style="left: 960px; top: 767px"></button>
-            <button @mouseclick="mouseClick" @mouseover="mouseOver" id="mapCon" class="absolute" style="left: 1151px; top: 786px"></button>
-            <button @mouseclick="mouseClick" @mouseover="mouseOver" id="machineCon" class="absolute" style="left: 1549px; top: 280px"></button>
-            <button @mouseclick="mouseClick" @mouseover="mouseOver" id="piggybankCon" class="absolute" style="left: 1478px; top: 645px"></button>
-            <button @mouseclick="mouseClick" @mouseover="mouseOver" id="faqCon" class="absolute" style="left: 1617px; top: 594px"></button>
-            <button @mouseclick="mouseClick" @mouseover="mouseOver" id="wheelCon" class="absolute" style="left: 1538px; top: 790px"></button>
-            <button @mouseclick="mouseClick" @mouseover="mouseOver" id="chestCon" class="absolute" style="left: 1693px; top: 852px"></button>
+            <button @click="mouseClick" id="bookCon" class="absolute top-200 left-240 w-40 h-40"></button>
+            <app-bookCon v-if="component == 'bookCon'" @closeComp="closeComp"></app-bookCon>
+
+            <button @click="mouseClick" id="mapCon" class="absolute top-208 left-280 w-56 h-28"></button>
+            <button @click="mouseClick" id="machineCon" class="absolute top-72 left-392 w-52 h-60"></button>
+            <button @click="mouseClick" id="piggybankCon" class="absolute top-160 left-368 w-40 h-28"></button>
+            <button @click="mouseClick" id="faqCon" class="absolute top-152 left-416 w-44 h-40"></button>
+            <button @click="mouseClick" id="wheelCon" class="absolute top-200 left-384 w-32 h-40"></button>
+            <button @click="mouseClick" id="chestCon" class="absolute top-208 left-424 w-40 h-36"></button>
         </main>
     </section>
     `,
     data() {
         return {
-
+            overlay: this.$refs.overlay,
+            comp: ""
+        }
+    },
+    computed: {
+        component: {
+            get: function() {
+                return this.comp;
+            },
+            set: function(x) {
+                this.comp = x;
+            }
         }
     },
     methods: {
         showMenu() {
-            console.log("showMenu")
-            let navMenu = this.$refs.navMenu;
-            navMenu.classList.remove("hidden");
-            navMenu.classList.add("showMenu");
+            overlay.classList.add("opacity-50")
         },
         closeMenu() {
-            console.log("closeMenu")
-        },
-        mouseOver(e) {
-            // This will be the shadow! - Awaiting element pictures
-            // e.target.style.boxShadow = "4px 8px rgba(0,0,0,0.2)"
+            overlay.classList.remove("opacity-50")
         },
         mouseClick(e) {
             // Popup!
-            console.log(e)
+            targetId = e.currentTarget.id;
+            this.component = targetId;
+            console.log(this.component)
+        },
+        closeComp() {
+            this.component = "";
+        },
+        openComp(comp) {
+            this.component = comp;
         }
     }
 })

@@ -3,90 +3,45 @@ html, body {
     font-family: 'Dosis', sans-serif !important;
 }
 
-body {
-    background: url("../Resources/14background.png") 100% no-repeat;
+main#app, #init {
     width: 1920px;
     height: 1080px;
 }
-
-main {
-    background: url("../Resources/12furniture.png") no-repeat right bottom, url("../Resources/2door.png") top left;
-    height: 100%;
+main#main {
+    background: url("../Resources/Website\ image\ \(Background+Elements\).png") 100% no-repeat;
+    width: 1920px;
+    height: 1080px;
 }
 
 #navMenu {
     position: fixed;
     top: 0;
     left: 0;
-    /* display: grid; */
 }
 
-#boardCon {
-    background: url("../Resources/9board.png") no-repeat top left;
-    width: 373px;
-    height: 319px;
+#teamHeader {
+    background-image: url("../Resources/logo1.png");
+    background-repeat: space;
+    background-position: center;
 }
 
-#whitepaperCon {
-    background: url("../Resources/13whitepaper.png") no-repeat top left;
-    width: 272px;
-    height: 359px;
+#pageCon {
+    background-image: url("../Resources/Page.png");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-#portraitCon {
-    background: url("../Resources/11potrait.png") no-repeat top left;
-    width: 278px;
-    height: 222px
+/* width */
+::-webkit-scrollbar {
+    width: 10px !important;
 }
 
-#computerCon {
-    background: url("../Resources/10computer.png") no-repeat top left;
-    width: 675px;
-    height: 358px;
+/* Track */
+::-webkit-scrollbar-track {
+    background: #2E2E2E !important;
 }
 
-#bookCon {
-    background: url("../Resources/7book.png") no-repeat top left;
-    width: 161px;
-    height:191px;
-}
-
-#mapCon {
-    background: url("../Resources/8map.png") no-repeat top left;
-    width: 256px;
-    height: 169px;
-}
-
-#machineCon {
-    background: url("../Resources/6machine.png") no-repeat top left;
-    width: 315px;
-    height: 244px;
-}
-
-#piggybankCon {
-    background: url("../Resources/5piggybank.png") no-repeat top left;
-    width: 174px;
-    height: 114px;
-}
-
-#faqCon {
-    background: url("../Resources/1faq.png") no-repeat top left;
-    width: 255px;
-    height: 169px;
-}
-
-#wheelCon {
-    background: url("../Resources/4wheel.png") no-repeat top left;
-    width: 172px;
-    height: 178px;
-}
-
-#chestCon {
-    background: url("../Resources/3chest.png") no-repeat top left;
-    width: 161px;
-    height: 123px;
-}
-
-.shadow {
-
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #0085FF !important;
 }

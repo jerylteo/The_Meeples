@@ -12,7 +12,7 @@ Vue.component('app-nav', {
             <h2 class="font-extrabold text-2xl text-white">LINKS</h2>
         </div>
         <div class="bg-custom_grey text-center p-2 flex items-center justify-center">
-            <button class="flex items-center justify-center">    
+            <button class="flex items-center justify-center" @click.prevent="openComp('bookCon')">    
                 <img class="inline mr-2" src="Resources/icons/BWbook 1.png" alt="Book Icon">
                 <p class="font-extrabold text-lg text-text">lore and story</p>
             </button>
@@ -104,6 +104,9 @@ Vue.component('app-nav', {
     methods: {
         closeMenu() {
             this.$emit("closeMenu")
+        },
+        openComp() {
+            this.$emit('openComp', 'bookCon')
         }
     }
 })

@@ -1,24 +1,20 @@
 Vue.component('app-header', {
     template:
     `
-    <header class="h-18 bg-white relative flex justify-between items-center p-4 z-40">
+    <header class="h-18 bg-quarternary relative flex overflow-visible justify-between items-center p-4 z-40">
         <button class="space-y-2" @click.prevent="showMenu">
             <span class="block w-8 h-0.5 bg-gray-800"></span>
             <span class="block w-8 h-0.5 bg-gray-800"></span>
             <span class="block w-5 h-0.5 bg-gray-800"></span>
         </button>
-        <div class="flex flex-col pt-12">
-            <p class="text-center text-xl font-extrabold">warm welcome to</p>
-            <div class="bg-white rounded-xl px-8 pb-4">
-                <!-- <img src="/Resources/The Meeples.png" alt="logo"> -->
-                <h1 class="text-6xl">
-                    <span class="text-primary">Th</span><span class="text-secondary">e M</span><span class="text-tertiary">ee</span><span class="text-quarternary">pl</span><span class="text-quinary">es</span>
-                </h1>
+        <div class="flex flex-col">
+            <div class="rounded-xl pt-8 w-72">
+                <img class="w-full h-full object-contain" src="/Resources/The Meeples Coloured Logotype.png" alt="The Meeples">
             </div>
         </div>
         <div></div>
         <nav class="hidden w-96 bg-white rounded-b-3xl" ref="navMenu" id="navMenu">
-            <app-nav @closeMenu="closeMenu"></app-nav>
+            <app-nav @closeMenu="closeMenu" @openComp="openComp"></app-nav>
         </nav>
     </header>
     `,
@@ -29,12 +25,16 @@ Vue.component('app-header', {
     },
     methods: {
         showMenu() {
+            this.$emit('showMenu');
             navMenu.classList.remove("hidden");
-            navMenu.classList.add("grid");
         },
         closeMenu() {
-            navMenu.classList.remove("grid")
-            navMenu.classList.add("hidden")
+            this.$emit('closeMenu');
+            navMenu.classList.add("hidden");
+        },
+        openComp(comp) {
+            this.closeMenu();
+            this.$emit('openComp', comp);
         }
     }
 })
