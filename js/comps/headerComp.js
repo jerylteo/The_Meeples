@@ -9,7 +9,7 @@ Vue.component('app-header', {
         </button>
         <div class="flex flex-col">
             <div class="rounded-xl pt-8 w-72">
-                <img class="w-full h-full object-contain" src="/Resources/The Meeples Coloured Logotype.png" alt="The Meeples">
+                <img class="w-full h-full object-contain" src="./Resources/The Meeples Coloured Logotype.png" alt="The Meeples">
             </div>
         </div>
         <div></div>

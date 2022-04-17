@@ -4,7 +4,7 @@ Vue.component('app-init', {
     <section class="absolute top-0 right-0 w-screen h-screen bg-custom_grey z-50" ref="init" id="init">
         <article class="w-full h-full flex flex-col items-center justify-center">
             <div class="mb-6 w-200">
-                <img class="object-fit" src="/Resources/The Meeples Coloured Logotype.png" alt="The Meeples">
+                <img class="object-fit" src="./Resources/The Meeples Coloured Logotype.png" alt="The Meeples">
             </div>
             <p class="text-xl font-extrabold"><span class="text-primary">Immerse yourself</span> in this web application with a <span class="text-primary">1920x1080</span> resolution for the best experience</p>
             <div>
