@@ -1,7 +1,7 @@
 Vue.component('app-init', {
     template:
     `
-    <section class="hidden top-0 right-0 w-screen h-screen bg-custom_grey z-50" ref="init" id="init">
+    <section class="absolute top-0 right-0 w-screen h-screen bg-custom_grey z-50" ref="init" id="init">
         <article class="w-full h-full flex flex-col items-center justify-center">
             <div class="mb-6 w-200">
                 <img class="object-fit" src="./Resources/The Meeples Coloured Logotype.png" alt="The Meeples">
