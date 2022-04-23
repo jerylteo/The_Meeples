@@ -81,7 +81,7 @@ Vue.component('app-nav', {
         <div class="col-span-2 p-2 flex items-center justify-center">
             <button class="flex items-center justify-center">
                 <img class="inline mr-2" src="Resources/icons/6machine.png" alt="Machine Icon">
-                <p class="font-extrabold text-lg text-text">Music Meeple Machine</p>
+                <p class="font-extrabold text-lg text-text">Magic Meeple Machine</p>
                 <img class="inline ml-2" src="Resources/icons/6machine.png" alt="Machine Icon">
             </button>
         </div>
