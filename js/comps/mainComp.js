@@ -16,17 +16,25 @@ Vue.component('app-main', {
             <app-portraitCon v-if="component == 'portraitCon'" @closeComp="closeComp"></app-portraitCon>
 
             <div @click="mouseClick" id="computerCon" class="absolute top-152 left-240 w-72 h-40 flex flex-col items-center justify-center">
-                <h2 class="text-custom_green text-2xl font-extrabold mb-2">.../5,555 minted</h2>
-                <button class="bg-custom_green text-2xl font-extrabold text-black rounded-3xl w-3/4 py-1 drop-shadow">CONNECT</button>
             </div>
             <button @click="mouseClick" id="bookCon" class="absolute top-200 left-240 w-40 h-40"></button>
             <app-bookCon v-if="component == 'bookCon'" @closeComp="closeComp"></app-bookCon>
-
+            
             <button @click="mouseClick" id="mapCon" class="absolute top-208 left-280 w-56 h-28"></button>
+            <app-mapCon v-if="component == 'mapCon'" @closeComp="closeComp"></app-mapCon>
+            
             <button @click="mouseClick" id="machineCon" class="absolute top-72 left-392 w-52 h-60"></button>
+            <app-machineCon v-if="component == 'machineCon'" @closeComp="closeComp"></app-machineCon>
+            
             <button @click="mouseClick" id="piggybankCon" class="absolute top-160 left-368 w-40 h-28"></button>
+            <app-piggybankCon v-if="component == 'piggybankCon'" @closeComp="closeComp"></app-piggybankCon>
+            
             <button @click="mouseClick" id="faqCon" class="absolute top-152 left-416 w-44 h-40"></button>
+            <app-faqCon v-if="component == 'faqCon'" @closeComp="closeComp"></app-faqCon>
+            
             <button @click="mouseClick" id="wheelCon" class="absolute top-200 left-384 w-32 h-40"></button>
+            <app-wheelCon v-if="component == 'wheelCon'" @closeComp="closeComp"></app-wheelCon>
+
             <button @click="mouseClick" id="chestCon" class="absolute top-208 left-424 w-40 h-36"></button>
         </main>
     </section>

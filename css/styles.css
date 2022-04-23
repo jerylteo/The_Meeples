@@ -25,6 +25,22 @@ main#main {
     background-position: center;
 }
 
+#machineHeader {
+    background-image: url("../Resources/machineHeader.png");
+    background-repeat: space;
+    background-position: center;
+}
+#piggyHeader {
+    background-image: url("../Resources/pigHeader.png");
+    background-repeat: space;
+    background-position: center;
+}
+#faqHeader {
+    background-image: url("../Resources/faqHeader.png");
+    background-repeat: space;
+    background-position: center;
+}
+
 #pageCon {
     background-image: url("../Resources/Page.png");
     background-repeat: no-repeat;
