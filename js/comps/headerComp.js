@@ -2,10 +2,10 @@ Vue.component('app-header', {
     template:
     `
     <header class="h-18 bg-quarternary relative flex overflow-visible justify-between items-center p-4 z-40">
-        <button class="flex flex-col justify-between h-6" @click.prevent="showMenu">
-            <span class="block w-8 h-1 bg-gray-800"></span>
-            <span class="block w-8 h-1 bg-gray-800"></span>
-            <span class="block w-8 h-1 bg-gray-800"></span>
+        <button class="flex flex-col justify-between" @click.prevent="showMenu">
+            <span class="block w-10 h-2 bg-gray-800 rounded"></span>
+            <span class="block w-10 h-2 bg-gray-800 mt-1 rounded"></span>
+            <span class="block w-10 h-2 bg-gray-800 mt-1 rounded"></span>
         </button>
         <div class="flex flex-col">
             <div class="rounded-xl pt-8 w-72">
