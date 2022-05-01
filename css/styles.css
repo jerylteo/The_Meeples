@@ -5,7 +5,7 @@ html, body {
 
 main#main {
     background: url("../Resources/Website\ image\ \(Background+Elements\).png") no-repeat;
-    background-size: 100vw 100vh;
+    background-size: 99vw 100vh;
 }
 
 #navMenu {
