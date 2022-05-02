@@ -37,7 +37,7 @@ Vue.component('app-main', {
             <button @click="mouseClick" id="chestCon" class="compButton absolute" style="top: 75%; left: 90.5%;"></button>
             <app-footer @openComp="openComp"></app-footer>
         </main>
-        <audio ref="audio" src="/Resources/sounds/mixkit-positive-interface-click-1112.wav"></audio>
+        <audio ref="audio" src="Resources/sounds/mixkit-positive-interface-click-1112.wav"></audio>
     </section>
     `,
     data() {

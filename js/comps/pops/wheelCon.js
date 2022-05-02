@@ -9,7 +9,7 @@ Vue.component('app-wheelCon', {
                 <h2 class="mt-4 text-5xl font-extrabold text-center">The first of many MINIGAMES to be released, the Wheel of Goodies! The wheel can be spun daily, with many attractive prizes to be won by the meeple fam :D</h2>
 
                 <div class="my-20">
-                    <div class="grid grid-cols-5 gap-10">
+                    <div class="grid grid-cols-3 3xl:grid-cols-5 gap-10">
                         <div class="rounded-lg bg-primary p-8">
                             <h6 class="text-2xl font-bold text-center">Meeple Fact</h6>
                             <p class="mt-2 text-lg font-bold text-white">Uncover an exciting meeple fact, crucial to The Meeples story and lore! Hint: Store them somewhere safe, they might come and handy!</p>

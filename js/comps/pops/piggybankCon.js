@@ -14,7 +14,7 @@ Vue.component('app-piggybankCon', {
                         <img src="./Resources/pigtv.png" alt="pigTv">
                     </div>
                 </div>
-                <div class="flex justify-between items-baseline mt-10 w-full px-40">
+                <div class="flex justify-between items-baseline mt-10 w-full 3xl:px-40">
                     <div class="w-2/3 flex justify-between">
                         <div class="flex flex-col items-center justify-center">
                             <h3 class="text-4xl font-extrabold leading-snug">FROM MINT</h3>
