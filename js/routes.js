@@ -11,6 +11,7 @@ const machineComp = {template: '<app-machineCon></app-machineCon>'};
 const piggybankComp = {template: '<app-piggybankCon></app-piggybankCon>'};
 const faqComp = {template: '<app-faqCon></app-faqCon>'};
 const wheelComp = {template: '<app-wheelCon></app-wheelCon>'};
+const chestComp = {template: '<app-chestCon></app-chestCon>'};
 
 const routes = [
     {path: '/', component: mainComp},

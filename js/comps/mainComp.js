@@ -5,12 +5,7 @@ Vue.component('app-main', {
         <app-header @showMenu="showMenu" @closeMenu="closeMenu" @openComp="openComp"></app-header>
         <main class="absolute top-0 left-0 h-full w-full z-10" id="main">
             <div id="overlay" class="transition-opacity bg-black opacity-0 h-full w-full"></div>
-            <button @click="mouseClick" id="boardCon" class="absolute" style="top: 19.5%; left: 4.5%">
-                <div id="boardContent" class="w-64 lg:w-72 xl:w-80 2xl:w-88 h-64 py-8 px-12">
-                    <p class="text-base 2xl:text-lg text-left leading-none lg:leading-5 2xl:leading-6 font-extrabold"><span class="text-primary">Th</span><span class="text-quarternary">e M</span><span class="text-secondary">ee</span><span class="text-tertiary">pl</span><span class="text-quinary">es</span> is a GENESIS collection of 5,555 fully customizable NFTs that grants you exclusive access to Meeple’s Metro and much more!
-                        <br><br>psst, click on some of the items to learn more about the project!</p>
-                </div>
-            </button>
+
             <button @click="mouseClick" id="whitepaperCon" class="compButton absolute" style="top: 20%; left: 32%;"></button>
             <button @click="mouseClick" id="portraitCon" class="compButton absolute" style="top: 58%; left: 32%;"></button>
             <app-portraitCon v-if="component == 'portraitCon'" @closeComp="closeComp"></app-portraitCon>
@@ -33,8 +28,10 @@ Vue.component('app-main', {
             
             <button @click="mouseClick" id="wheelCon" class="compButton absolute" style="top: 70%; left: 81.5%;"></button>
             <app-wheelCon v-if="component == 'wheelCon'" @closeComp="closeComp"></app-wheelCon>
-
+            
             <button @click="mouseClick" id="chestCon" class="compButton absolute" style="top: 75%; left: 90.5%;"></button>
+            <app-chestCon v-if="component == 'chestCon'" @closeComp="closeComp"></app-chestCon>
+
             <app-footer @openComp="openComp"></app-footer>
         </main>
         <audio ref="audio" src="Resources/sounds/mixkit-positive-interface-click-1112.wav"></audio>

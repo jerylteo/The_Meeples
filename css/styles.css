@@ -44,6 +44,12 @@ main#main {
     background-size: auto;
 }
 
+#chestHeader {
+    background-image: url("../Resources/chestHeader.png");
+    background-repeat: space;
+    background-position: center;
+}
+
 .compButton {
     transition: all 300ms ease-in-out;
     background-image: url("../Resources/icons/Button\ Without\ Hover.png");

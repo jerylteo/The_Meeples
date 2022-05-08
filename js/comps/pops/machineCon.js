@@ -3,7 +3,7 @@ Vue.component('app-machineCon', {
     `
     <section @click.prevent="closeComp" class="absolute top-0 left-0 px-20 py-40 w-full h-full bg-black/30 z-50" id="portraitCon">
         <div @click.prevent.stop class="relative rounded-lg bg-white h-full w-full overflow-y-scroll">
-            <header class="rounded-t-lg h-10 w-full bg-secondary" id="machineHeader"></header>\
+            <header class="rounded-t-lg h-10 w-full bg-secondary" id="machineHeader"></header>
             <div class="absolute mx-auto mt-96 z-40 w-full flex justify-center">
                 <img class="object-fit" src="./Resources/Magic Meeple Machine (build-your-own-meeple).png" alt="Magic Meeple Machine">
             </div>
