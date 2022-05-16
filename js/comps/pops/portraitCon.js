@@ -7,7 +7,7 @@ Vue.component('app-portraitCon', {
             <article class="p-8 w-full">
                 <h2 class="text-6xl font-extrabold text-center">Team + Vision for <span class="text-primary">Th</span><span class="text-quarternary">e M</span><span class="text-secondary">ee</span><span class="text-tertiary">pl</span><span class="text-quinary">es</span> and Meeple's Metro</h2>
                 <div class="py-12 px-40 3xl:px-80">
-                    <p class="text-4xl font-bold leading-snug">The team aims to make Meeple’s Metro (MM) a chill and fun social hub for NFT lovers. The goal is for holders to resonate with their meeple and live an exciting dream in MM. Meeples will enjoy fun P2E games/minigames, receive quality alpha, mingle with others and participate in social activities/giveaways. </p>
+                    <p class="text-4xl font-bold leading-snug">The team aims to make The Meeple’s Metro (MM) a chill and fun social hub for NFT lovers. The goal is for holders to resonate with their meeple and live an exciting dream in MM. Meeples will enjoy fun P2E games/minigames, receive quality alpha, mingle with others and participate in social activities/giveaways.</p>
                     <p class="pt-10 text-4xl font-bold leading-snug">The Magic Meeple Machine (MMM) and the wheel of goodies (which are already available) is just the beginning, we will do our best to achieve all stated goals and reach the fullest potential of MM. </p>
                     <p class="pt-10 text-4xl font-bold leading-snug">Meet the wonderful team behind this project:</p>
                 </div>
@@ -19,7 +19,7 @@ Vue.component('app-portraitCon', {
                             </div>
                             <div class="p-4">
                                 <p class="text-white text-2xl font-bold">{{member.name}}</p>
-                                <p class="text-white text-lg font-bold pt-1">{{member.role}}</p>
+                                <p v-if="member.role" class="text-white text-lg font-bold pt-1">{{member.role}}</p>
                                 <p class="text-white text-lg font-bold pt-6">{{member.description}}</p>
                                 <div class="pt-6" v-if='member.social'>
                                     <p class="text-white text-lg font-bold">Join me at:</p>
@@ -50,19 +50,19 @@ Vue.component('app-portraitCon', {
                     social: "https://www.instagram.com/jerylteo.si/"
                 },
                 {
-                    name: 'Jakub',
-                    role: 'CEO',
-                    img: './Resources/members/img.png',
-                    description: ""
+                    name: 'Bernice',
+                    role: '',
+                    img: './Resources/members/bernice.jpg',
+                    description: "Hi there! My name is Bernice and I’m from the sunny Malaysia. I’m currently in the UK studying and have recently taken up the interest in volleyball. I help draw your favourite meeples and can’t wait to get to know you all in the meeple family!"
                 },
                 {
-                    name: 'Jakub',
-                    role: 'CEO',
-                    img: './Resources/members/img.png',
-                    description: ""
+                    name: 'Crystal',
+                    role: '',
+                    img: './Resources/members/crystal.jpg',
+                    description: "Hello I’m Crystal, a university student who’s currently studying biomedical sciences! While I’m not stu(dying), I love to draw cute illustrations and play volleyball. As I am a self taught artist, I may not have a very strong foundation in art but I strive to improve my skills and create even better art pieces :D"
                 },
                 {
-                    name: 'Jakub',
+                    name: 'Shi Bin',
                     role: 'CEO',
                     img: './Resources/members/img.png',
                     description: ""

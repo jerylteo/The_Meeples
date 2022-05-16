@@ -16,7 +16,7 @@ Vue.component('app-bookCon', {
                     <div class="px-8 flex items-center h-full">
                         <div>
                             <p class="text-3xl font-extrabold">ORIGINS</p>
-                            <p class="pt-4 font-bold text-lg leading-snug">The meeples used to live on planet Mars. They would go about their normal lives, just like us…</p>
+                            <p class="pt-4 font-bold text-lg leading-snug">The meeples used to live on planet Mars,  going about their normal lives just like us…</p>
                             <p class="pt-4 font-bold text-lg leading-snug">Surprisingly, NFTs were thriving on Mars too — but disliked by the general population. When the masses discovered that there was a group of NFT loving meeples amongst them, they despised them. The group of meeples were outcasted and ridiculed for “wasting” money on digital art.</p>
                             <p class="pt-4 font-bold text-lg leading-snug">Tired of being treated poorly, a group of 15 meeples, known as the Master Meeples, led a revolution with 5,540 other NFT-loving meeples. All 5,555 of them left their planet in capsules, in search for a better life for themselves, and for future NFT-loving meeples to come.</p>
                         </div>
