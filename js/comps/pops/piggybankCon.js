@@ -8,7 +8,7 @@ Vue.component('app-piggybankCon', {
                 <div class="flex justify-between items-center">
                     <div class="w-4/5">
                         <h2 class="text-6xl font-extrabold text-quarternary">How are funds managed in Meeple’s Metro?</h2>
-                        <p class="mt-8 text-3xl font-extrabold leading-snug">Master Meeple knows how hard is it to earn money. They strongly believe in transparency with the meeple fam to build a genuine and long lasting Meeple’s Metro that will flourish! Fund allocation is as shown:</p>
+                        <p class="mt-8 text-3xl font-extrabold leading-snug">Master Meeple knows how hard it is to earn a living. They strongly believe in transparency with the meeple fam to build a genuine and long lasting Meeple’s Metro that will flourish! Fund allocation is as shown:</p>
                     </div>
                     <div class="w-1/5 ml-10">
                         <img src="./Resources/pigtv.png" alt="pigTv">
@@ -30,9 +30,9 @@ Vue.component('app-piggybankCon', {
                         </div>
                     </div>
                     <div class="ml-20 w-1/3 bg-text rounded-lg p-10 self-stretch flex flex-col justify-center">
-                        <p class="text-lg font-extrabold leading-snug text-secondary">team - for the team’s hard work!</p>
-                        <p class="pt-4 text-lg font-extrabold leading-snug text-primary">holder’s vault - any purchase made from the holder’s vault will be strictly to give back to the holders; NFT prizes, giveaways, etc.</p>
-                        <p class="pt-4 text-lg font-extrabold leading-snug text-custom_lblue">metro vault - will be spent strictly for the development and upgrade of Meeple’s Metro!</p>
+                        <p class="text-lg font-extrabold leading-snug text-secondary">Team - for the team’s hard work!</p>
+                        <p class="pt-4 text-lg font-extrabold leading-snug text-primary">Holder's Vault - any purchase made from the holder’s vault will be strictly to give back to the holders; NFT prizes, giveaways, etc.</p>
+                        <p class="pt-4 text-lg font-extrabold leading-snug text-custom_lblue">Metro Vault - will be spent strictly for the development and upgrade of Meeple’s Metro!</p>
                     </div>
                 </div>
             </article>

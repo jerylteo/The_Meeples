@@ -17,19 +17,19 @@ Vue.component('app-faqCon', {
                     </div>
                     <div class="mt-8">
                         <h6 class="text-3xl font-extrabold">Where and Wen?</h6>
-                        <p class="mt-1 text-lg font-bold leading-snug">Mint ONLY at our official website; www.meeples.com. Minting will be sometime in April, exact date TBA in our discord channel!</p>
+                        <p class="mt-1 text-lg font-bold leading-snug">Mint ONLY at our official website; www.meeples.com. Minting date will be announced in our discord channel.</p>
+                    </div>
+                    <div class="mt-8">
+                        <h6 class="text-3xl font-extrabold">How many meeples can i buy?</h6>
+                        <p class="mt-1 text-lg font-bold leading-snug">We will be announcing this in our discord closer to mint date. We want everyone to have a chance to mint their own Meeple and to have as many unique holders as possible.</p>
                     </div>
                     <div class="mt-8">
                         <h6 class="text-3xl font-extrabold">What benefits do i get as a Meeple holder?</h6>
                         <p class="mt-1 text-lg font-bold leading-snug">2 per wallet for WL sale, 5 per wallet for PUBLIC sale</p>
                     </div>
                     <div class="mt-8">
-                        <h6 class="text-3xl font-extrabold">How many meeples can i buy?</h6>
-                        <p class="mt-1 text-lg font-bold leading-snug">A ton, like seriously! Click on the chest to read more on the holder’s benefits, or learn more from <span class="text-primary">Th</span><span class="text-quarternary">e M</span><span class="text-secondary">ee</span><span class="text-tertiary">pl</span><span class="text-quinary">es</span> whitepaper.</p>
-                    </div>
-                    <div class="mt-8">
                         <h6 class="text-3xl font-extrabold">What nation Meeple will i get?</h6>
-                        <p class="mt-1 text-lg font-bold leading-snug">The nation of your meeple will be randomly distributed during mint in order to maintain an equal distribution of each nation. Do not worry tho, all of the nations are equal and just as cool as the rest!</p>
+                        <p class="mt-1 text-lg font-bold leading-snug">The nation of your meeple will be randomly distributed during mint in order to maintain an equal distribution of each nation. Do not worry, all of the nations are equal and just as cool as the rest!</p>
                     </div>
                     <div class="mt-8">
                         <h6 class="text-3xl font-extrabold">Cool, I want to know more! </h6>

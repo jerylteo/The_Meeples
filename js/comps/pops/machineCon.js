@@ -12,7 +12,7 @@ Vue.component('app-machineCon', {
                 <div class="pt-12 px-40 2xl:px-60 grid grid-cols-3 gap-20">
                     <p class="text-3xl font-extrabold leading-snug">1. 5,555 GENESIS Meeple Capsules from <span class="text-primary">Th</span><span class="text-quarternary">e M</span><span class="text-secondary">ee</span><span class="text-tertiary">pl</span><span class="text-quinary">es</span> collection are discovered and minted on the ethereum blockchain.</p>
                     <p class="text-3xl font-extrabold leading-snug">2. Each Meeple Capsule can only be processed in the Magic Meeple Machine (MMM). Adopt your very own personal, fully customizable, one of millions meeple!</p>
-                    <p class="text-3xl font-extrabold leading-snug">3. wawaweewa! Many adventures now await you and your very own Meeple! (you can even give it a name if you like)</p>
+                    <p class="text-3xl font-extrabold leading-snug">3. wawaweewa! Many adventures now await you and your very own Meeple! </p>
                 </div>
             </article>
         </div>
